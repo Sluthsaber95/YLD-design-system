@@ -3,9 +3,9 @@ import theme from "../../theme/theme.js";
 
 export const Element = styled.button`
   font-size: ${theme.fontSizes[2]};
-  padding: 0 _____;
+  padding: var(--space-2); // edited
   border: 1px solid;
-  border-radius: ____;
+  border-radius: var(--radii-medium); // edited
   cursor: pointer;
   height: 40px;
 

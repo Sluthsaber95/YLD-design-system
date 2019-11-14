@@ -5,7 +5,7 @@ import { AvatarBlock, Card, Counter, Image, Icon, Stack } from "../../index";
 import { Element } from "./shot.elements.js";
 import theme from "../../../theme/theme.js";
 
-function Shot() {
+function Shot({ avatarImage, name }) {
   return (
     <Element>
       <Card>
@@ -26,16 +26,16 @@ function Shot() {
         </Card.Footer>
       </Card>
       <AvatarBlock
-        name="Guille Mesyngier"
-        avatar="https://cdn.dribbble.com/users/927565/avatars/normal/871881bb1267479631c106f2985c93b9.jpg"
+        name={name}
+        avatar={avatarImage}
       />
     </Element>
   );
 }
 
 Shot.propTypes = {
-  prop1: PropTypes.string,
-  prop2: PropTypes.number
+  name: PropTypes.string.isRequired,
+  avatarImage: PropTypes.string.isRequired
 };
 
 Shot.defaultProps = {};
