@@ -1,16 +1,56 @@
 :root {
-  --white: #fff;
+  --color-white: #fff;
 
   /* part 1: variables are css variables - key:value */
-  --gray-100: #f4f4f4;
-  --gray-200: #eee;
-  --gray-300: #ddd;
-  --gray-400: #bbb;
-  --gray-500: #999;
-  --gray-600: #777;
-  --gray-700: #666;
-  --gray-800: #444;
-  --gray-900: #333;
+  --color-gray-100: #f4f4f4;
+  --color-gray-200: #eee;
+  --color-gray-300: #ddd;
+  --color-gray-400: #bbb;
+  --color-gray-500: #999;
+  --color-gray-600: #777;
+  --color-gray-700: #666;
+  --color-gray-800: #444;
+  --color-gray-900: #333;
+
+  
+  --color-pink-500: #D95988;
+  --color-pink-700: #DF3E7B;
+  --color-pink-900: #C22B65;
+  
+  --color-blue-300: #4FB4DE;
+  --color-blue-500: var(--color-blue);
+  --color-blue-700: #1E6189;
+  --color-blue-900: #0C3F5D;
+  
+
+  --color-green-500: #7BBB5E;
+  --color-green-700: #5B9540;
+  --color-green-900: #3B6D25;
+
+  --color-red: #ED615C;
+  
 
   /* part 2: decisions can be encoded using aliases */
+
+  --color-brand-500: var(--color-pink-500);
+  --color-brand-700: var(--color-pink-700);
+  --color-brand-900: var(--color-pink-900);
+
+  --color-accent-300: var(--color-blue-300);
+  --color-accent-500: var(--color-blue-500);
+  --color-accent-700: var(--color-blue-700);
+  --color-accent-900: var(--color-blue-900);
+
+  --color-primary-pink: var(--color-brand-500);
+  --color-primary-blue: var(--color-blue-500);
+  --color-primary-grey: var(--color-gray-800);
+
+  --color-secondary-green: var(--color-green-500);
+  --color-secondary-red: var(--color-red);
+  --color-secondary-grey-light: var(--color-gray-800);
+
+  --color-danger: var(--color-red);
+  --color-info: var(--color-gray-300);
+  
 }
+
